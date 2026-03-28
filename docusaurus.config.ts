@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Anime Artist Platform',
   tagline: 'A hybrid platform for anime artists and fans — Social + Marketplace + Subscriptions + IoT',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
   future: {
     v4: true,
