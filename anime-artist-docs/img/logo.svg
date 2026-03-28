@@ -1,0 +1,25 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0088ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FB5414;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#eab308;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#bgGrad)" opacity="0.1"/>
+  <circle cx="100" cy="100" r="85" fill="none" stroke="url(#bgGrad)" stroke-width="2"/>
+  <!-- Stylized "A" for Anemir -->
+  <path d="M100 35 L145 150 H130 L120 120 H80 L70 150 H55 Z M85 107 H115 L100 60 Z" fill="url(#bgGrad)"/>
+  <!-- Star accent -->
+  <path d="M155 45 L160 58 L173 60 L163 70 L165 83 L155 77 L145 83 L147 70 L137 60 L150 58 Z" fill="url(#accentGrad)"/>
+  <!-- Small decorative dots -->
+  <circle cx="45" cy="55" r="4" fill="#4a90e2" opacity="0.6"/>
+  <circle cx="35" cy="75" r="3" fill="#0088ff" opacity="0.4"/>
+  <circle cx="50" cy="40" r="2" fill="#FB5414" opacity="0.5"/>
+  <!-- Underline accent -->
+  <line x1="65" y1="160" x2="135" y2="160" stroke="url(#accentGrad)" stroke-width="3" stroke-linecap="round"/>
+</svg>

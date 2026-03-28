@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-installation/installation-steps" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.0">
+<title data-rh="true">Installation Steps | Anime Artist Platform</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://your-username.github.io/anime-artist-docs/img/social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://your-username.github.io/anime-artist-docs/img/social-card.jpg"><meta data-rh="true" property="og:url" content="https://your-username.github.io/anime-artist-docs/docs/installation/installation-steps"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Installation Steps | Anime Artist Platform"><meta data-rh="true" name="description" content="This guide walks you through installing and configuring the Anime Artist Platform on your local development environment, from cloning the repository to running the application."><meta data-rh="true" property="og:description" content="This guide walks you through installing and configuring the Anime Artist Platform on your local development environment, from cloning the repository to running the application."><link data-rh="true" rel="icon" href="/anime-artist-docs/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-username.github.io/anime-artist-docs/docs/installation/installation-steps"><link data-rh="true" rel="alternate" href="https://your-username.github.io/anime-artist-docs/docs/installation/installation-steps" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-username.github.io/anime-artist-docs/docs/installation/installation-steps" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Installation","item":"https://your-username.github.io/anime-artist-docs/docs/category/installation"},{"@type":"ListItem","position":2,"name":"Installation Steps","item":"https://your-username.github.io/anime-artist-docs/docs/installation/installation-steps"}]}</script><link rel="stylesheet" href="/anime-artist-docs/assets/css/styles.ad42f089.css">
+<script src="/anime-artist-docs/assets/js/runtime~main.bb6682ab.js" defer="defer"></script>
+<script src="/anime-artist-docs/assets/js/main.ca31d73c.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/anime-artist-docs/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/anime-artist-docs/"><div class="navbar__logo"><img src="/anime-artist-docs/img/logo.svg" alt="Anime Artist Platform Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/anime-artist-docs/img/logo.svg" alt="Anime Artist Platform Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Anime Artist Platform</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/anime-artist-docs/docs/intro">Documentation</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/your-username/anime-artist-docs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/anime-artist-docs/docs/intro"><span title="Intro" class="linkLabel_WmDU">Intro</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/anime-artist-docs/docs/category/installation"><span title="Installation" class="categoryLinkLabel_W154">Installation</span></a><button aria-label="Collapse sidebar category &#x27;Installation&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/anime-artist-docs/docs/installation/installation-steps"><span title="Installation Steps" class="linkLabel_WmDU">Installation Steps</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/anime-artist-docs/docs/installation/file-structure"><span title="File Structure" class="linkLabel_WmDU">File Structure</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/anime-artist-docs/docs/installation/deployment"><span title="Deployment Guide" class="linkLabel_WmDU">Deployment Guide</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/anime-artist-docs/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/anime-artist-docs/docs/category/installation"><span>Installation</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Installation Steps</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Installation Steps</h1></header>
+<p>This guide walks you through installing and configuring the Anime Artist Platform on your local development environment, from cloning the repository to running the application.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prerequisites">Prerequisites<a href="#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="required-tools">Required Tools<a href="#required-tools" class="hash-link" aria-label="Direct link to Required Tools" title="Direct link to Required Tools" translate="no">​</a></h3>
+<ol>
+<li>
+<p><strong>Node.js 20+</strong> — <a href="https://nodejs.org/en/download" target="_blank" rel="noopener noreferrer">Download</a>
+JavaScript runtime required to run the development server and build the project.</p>
+</li>
+<li>
+<p><strong>Bun (latest)</strong> — <a href="https://bun.sh" target="_blank" rel="noopener noreferrer">Download</a>
+Fast package manager and runtime used for dependency installation and build scripts.</p>
+</li>
+<li>
+<p><strong>Git 2.30+</strong> — <a href="https://git-scm.com/downloads" target="_blank" rel="noopener noreferrer">Download</a>
+Version control system for cloning and managing the project repository.</p>
+</li>
+<li>
+<p><strong>Firebase CLI</strong> — <a href="https://firebase.google.com/docs/cli" target="_blank" rel="noopener noreferrer">Download</a>
+Command-line tool for managing Firebase services, deploying functions, and configuring authentication.</p>
+</li>
+<li>
+<p><strong>VS Code (Recommended)</strong> — <a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer">Download</a>
+Code editor with excellent TypeScript and React support via extensions.</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="required-files">Required Files<a href="#required-files" class="hash-link" aria-label="Direct link to Required Files" title="Direct link to Required Files" translate="no">​</a></h3>
+<ul>
+<li>Access to the project repository (GitHub)</li>
+<li>Firebase project configuration credentials (from Firebase Console)</li>
+<li>Stripe API keys (from Stripe Dashboard)</li>
+<li>17Track API key (for shipping integration)</li>
+<li>JieLi Device SDK documentation (for BLE hardware integration)</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="installation-process">Installation Process<a href="#installation-process" class="hash-link" aria-label="Direct link to Installation Process" title="Direct link to Installation Process" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-clone-the-repository">Step 1: Clone the Repository<a href="#step-1-clone-the-repository" class="hash-link" aria-label="Direct link to Step 1: Clone the Repository" title="Direct link to Step 1: Clone the Repository" translate="no">​</a></h3>
+<p>Clone the Anime Artist Platform repository to your local machine.</p>
+<ol>
+<li>Open your terminal</li>
+<li>Navigate to the directory where you want to store the project</li>
+<li>Run the following command:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token function" style="color:rgb(80, 250, 123)">git</span><span class="token plain"> clone https://github.com/your-username/anime-artist-platform.git</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain"></span><span class="token builtin class-name" style="color:rgb(189, 147, 249)">cd</span><span class="token plain"> anime-artist-platform</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-install-dependencies">Step 2: Install Dependencies<a href="#step-2-install-dependencies" class="hash-link" aria-label="Direct link to Step 2: Install Dependencies" title="Direct link to Step 2: Install Dependencies" translate="no">​</a></h3>
+<p>Install all project dependencies using Bun.</p>
+<ol>
+<li>Ensure you are in the project root directory</li>
+<li>Run the install command:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">bun </span><span class="token function" style="color:rgb(80, 250, 123)">install</span><br></span></code></pre></div></div>
+<ol start="3">
+<li>Wait for all dependencies to be installed</li>
+</ol>
+<p><strong>Important Notes:</strong> If you encounter permission errors on macOS/Linux, do not use <code>sudo</code>. Instead, fix your npm/bun permissions by following the official documentation.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-configure-environment-variables">Step 3: Configure Environment Variables<a href="#step-3-configure-environment-variables" class="hash-link" aria-label="Direct link to Step 3: Configure Environment Variables" title="Direct link to Step 3: Configure Environment Variables" translate="no">​</a></h3>
+<p>Set up the required environment variables for Firebase, Stripe, and third-party services.</p>
+<ol>
+<li>Copy the example environment file:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token function" style="color:rgb(80, 250, 123)">cp</span><span class="token plain"> .env.example .env.local</span><br></span></code></pre></div></div>
+<ol start="2">
+<li>Open <code>.env.local</code> and fill in your credentials:</li>
+</ol>
+<div class="language-env codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-env codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain"># Firebase Configuration</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">NEXT_PUBLIC_FIREBASE_API_KEY=your-firebase-api-key</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-project-id.firebaseapp.com</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">NEXT_PUBLIC_FIREBASE_PROJECT_ID=your-project-id</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your-project-id.appspot.com</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=XXXXXXXXXXXX</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">NEXT_PUBLIC_FIREBASE_APP_ID=1:XXXXXXXXXXXX:web:XXXXXXXXXXXXXXXXXXXXXX</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain"># Stripe Payment</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_XXXXXXXXXXXXXXXXXXXXXX</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">STRIPE_SECRET_KEY=sk_test_XXXXXXXXXXXXXXXXXXXXXX</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">STRIPE_WEBHOOK_SECRET=whsec_XXXXXXXXXXXXXXXXXXXXXX</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain"># 17Track Shipping API</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">NEXT_PUBLIC_17TRACK_API_KEY=your-17track-api-key</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain"># BLE Device Configuration</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">NEXT_PUBLIC_BLE_SERVICE_UUID=your-ble-service-uuid</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">NEXT_PUBLIC_BLE_CHARACTERISTIC_UUID=your-ble-characteristic-uuid</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain"># App Configuration</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">NEXT_PUBLIC_APP_URL=http://localhost:3000</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">NEXT_PUBLIC_APP_NAME=Anime Artist Platform</span><br></span></code></pre></div></div>
+<p><strong>Important Notes:</strong> Never commit your <code>.env.local</code> file to version control. The <code>.gitignore</code> file is pre-configured to exclude it.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-4-set-up-firebase-project">Step 4: Set Up Firebase Project<a href="#step-4-set-up-firebase-project" class="hash-link" aria-label="Direct link to Step 4: Set Up Firebase Project" title="Direct link to Step 4: Set Up Firebase Project" translate="no">​</a></h3>
+<p>Configure Firebase services required by the platform.</p>
+<ol>
+<li>Go to the <a href="https://console.firebase.google.com" target="_blank" rel="noopener noreferrer">Firebase Console</a></li>
+<li>Create a new project or select an existing one</li>
+<li>Enable the following services:</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="authentication">Authentication<a href="#authentication" class="hash-link" aria-label="Direct link to Authentication" title="Direct link to Authentication" translate="no">​</a></h4>
+<ol>
+<li>Navigate to <strong>Authentication</strong> &gt; <strong>Sign-in method</strong></li>
+<li>Enable <strong>Email/Password</strong> provider</li>
+<li>Enable <strong>Google</strong> provider (for social login)</li>
+<li>Add your development domain to <strong>Authorized domains</strong></li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="firestore-database">Firestore Database<a href="#firestore-database" class="hash-link" aria-label="Direct link to Firestore Database" title="Direct link to Firestore Database" translate="no">​</a></h4>
+<ol>
+<li>Navigate to <strong>Firestore Database</strong></li>
+<li>Click <strong>Create database</strong></li>
+<li>Select <strong>Start in test mode</strong> for development</li>
+<li>Choose your preferred region</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="cloud-storage">Cloud Storage<a href="#cloud-storage" class="hash-link" aria-label="Direct link to Cloud Storage" title="Direct link to Cloud Storage" translate="no">​</a></h4>
+<ol>
+<li>Navigate to <strong>Storage</strong></li>
+<li>Click <strong>Get started</strong></li>
+<li>Configure storage rules for development</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-5-initialize-firebase-in-the-project">Step 5: Initialize Firebase in the Project<a href="#step-5-initialize-firebase-in-the-project" class="hash-link" aria-label="Direct link to Step 5: Initialize Firebase in the Project" title="Direct link to Step 5: Initialize Firebase in the Project" translate="no">​</a></h3>
+<p>Link your Firebase project to the local codebase.</p>
+<ol>
+<li>Install Firebase CLI globally if not already installed:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token function" style="color:rgb(80, 250, 123)">npm</span><span class="token plain"> </span><span class="token function" style="color:rgb(80, 250, 123)">install</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(189, 147, 249);font-style:italic">-g</span><span class="token plain"> firebase-tools</span><br></span></code></pre></div></div>
+<ol start="2">
+<li>Log in to Firebase:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">firebase login</span><br></span></code></pre></div></div>
+<ol start="3">
+<li>Initialize Firebase in the project:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">firebase init</span><br></span></code></pre></div></div>
+<ol start="4">
+<li>Select the following features when prompted:<!-- -->
+<ul>
+<li>Firestore</li>
+<li>Storage</li>
+<li>Hosting (if deploying via Firebase)</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-6-configure-stripe-webhooks-for-local-development">Step 6: Configure Stripe Webhooks (for Local Development)<a href="#step-6-configure-stripe-webhooks-for-local-development" class="hash-link" aria-label="Direct link to Step 6: Configure Stripe Webhooks (for Local Development)" title="Direct link to Step 6: Configure Stripe Webhooks (for Local Development)" translate="no">​</a></h3>
+<p>Set up Stripe webhook forwarding for local testing of payment flows.</p>
+<ol>
+<li>Install the Stripe CLI from <a href="https://stripe.com/docs/stripe-cli" target="_blank" rel="noopener noreferrer">https://stripe.com/docs/stripe-cli</a></li>
+<li>Log in to Stripe CLI:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">stripe login</span><br></span></code></pre></div></div>
+<ol start="3">
+<li>Forward webhooks to your local server:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">stripe listen --forward-to localhost:3000/api/webhooks/stripe</span><br></span></code></pre></div></div>
+<ol start="4">
+<li>Copy the webhook signing secret displayed in the terminal and add it to your <code>.env.local</code> as <code>STRIPE_WEBHOOK_SECRET</code></li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-7-run-the-development-server">Step 7: Run the Development Server<a href="#step-7-run-the-development-server" class="hash-link" aria-label="Direct link to Step 7: Run the Development Server" title="Direct link to Step 7: Run the Development Server" translate="no">​</a></h3>
+<p>Start the local development server to verify everything is working.</p>
+<ol>
+<li>Run the development command:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">bun run dev</span><br></span></code></pre></div></div>
+<ol start="2">
+<li>Open your browser and navigate to:</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">http://localhost:3000</span><br></span></code></pre></div></div>
+<ol start="3">
+<li>You should see the Anime Artist Platform landing page</li>
+</ol>
+<p><strong>Important Notes:</strong> The first build may take longer as it compiles TypeScript and generates optimized assets. Subsequent hot-reloads will be near-instant.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="verification">Verification<a href="#verification" class="hash-link" aria-label="Direct link to Verification" title="Direct link to Verification" translate="no">​</a></h2>
+<p>After completing all installation steps, verify the following:</p>
+<ol>
+<li>The development server starts without errors</li>
+<li>The landing page loads at <code>http://localhost:3000</code></li>
+<li>Firebase Authentication is working (try registering a test user)</li>
+<li>Firestore reads/writes are functional (check the browser console for errors)</li>
+<li>The Stripe checkout flow renders correctly in test mode</li>
+<li>BLE device scanning initializes without errors (requires a compatible browser)</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="common-installation-issues">Common Installation Issues<a href="#common-installation-issues" class="hash-link" aria-label="Direct link to Common Installation Issues" title="Direct link to Common Installation Issues" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="issue-1-nodejs-version-mismatch">Issue 1: Node.js Version Mismatch<a href="#issue-1-nodejs-version-mismatch" class="hash-link" aria-label="Direct link to Issue 1: Node.js Version Mismatch" title="Direct link to Issue 1: Node.js Version Mismatch" translate="no">​</a></h3>
+<p><strong>Error:</strong> <code>The engine &quot;node&quot; is incompatible with this module</code></p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li>Check your current Node.js version:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token function" style="color:rgb(80, 250, 123)">node</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(189, 147, 249);font-style:italic">--version</span><br></span></code></pre></div></div>
+<ol start="2">
+<li>Install Node.js 20+ using nvm:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">nvm </span><span class="token function" style="color:rgb(80, 250, 123)">install</span><span class="token plain"> </span><span class="token number">20</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">nvm use </span><span class="token number">20</span><br></span></code></pre></div></div>
+<ol start="3">
+<li>Restart your terminal and reinstall dependencies:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">bun </span><span class="token function" style="color:rgb(80, 250, 123)">install</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="issue-2-bun-not-found">Issue 2: Bun Not Found<a href="#issue-2-bun-not-found" class="hash-link" aria-label="Direct link to Issue 2: Bun Not Found" title="Direct link to Issue 2: Bun Not Found" translate="no">​</a></h3>
+<p><strong>Error:</strong> <code>command not found: bun</code></p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li>Install Bun globally:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token function" style="color:rgb(80, 250, 123)">curl</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(189, 147, 249);font-style:italic">-fsSL</span><span class="token plain"> https://bun.sh/install </span><span class="token operator">|</span><span class="token plain"> </span><span class="token function" style="color:rgb(80, 250, 123)">bash</span><br></span></code></pre></div></div>
+<ol start="2">
+<li>Restart your terminal or source your profile:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token builtin class-name" style="color:rgb(189, 147, 249)">source</span><span class="token plain"> ~/.bashrc</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain"></span><span class="token comment" style="color:rgb(98, 114, 164)"># or</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain"></span><span class="token builtin class-name" style="color:rgb(189, 147, 249)">source</span><span class="token plain"> ~/.zshrc</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="issue-3-firebase-configuration-error">Issue 3: Firebase Configuration Error<a href="#issue-3-firebase-configuration-error" class="hash-link" aria-label="Direct link to Issue 3: Firebase Configuration Error" title="Direct link to Issue 3: Firebase Configuration Error" translate="no">​</a></h3>
+<p><strong>Error:</strong> <code>Firebase: Error (auth/invalid-api-key)</code></p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li>Verify your Firebase API key in <code>.env.local</code></li>
+<li>Ensure the key matches the one in your Firebase Console &gt; Project Settings &gt; General</li>
+<li>Restart the development server after updating environment variables</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="issue-4-port-already-in-use">Issue 4: Port Already in Use<a href="#issue-4-port-already-in-use" class="hash-link" aria-label="Direct link to Issue 4: Port Already in Use" title="Direct link to Issue 4: Port Already in Use" translate="no">​</a></h3>
+<p><strong>Error:</strong> <code>Error: listen EADDRINUSE :::3000</code></p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li>Find the process using port 3000:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token function" style="color:rgb(80, 250, 123)">lsof</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(189, 147, 249);font-style:italic">-i</span><span class="token plain"> :3000</span><br></span></code></pre></div></div>
+<ol start="2">
+<li>Kill the process:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token function" style="color:rgb(80, 250, 123)">kill</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(189, 147, 249);font-style:italic">-9</span><span class="token plain"> </span><span class="token operator">&lt;</span><span class="token plain">PID</span><span class="token operator">&gt;</span><br></span></code></pre></div></div>
+<ol start="3">
+<li>Restart the development server</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="issue-5-stripe-webhook-signature-verification-failed">Issue 5: Stripe Webhook Signature Verification Failed<a href="#issue-5-stripe-webhook-signature-verification-failed" class="hash-link" aria-label="Direct link to Issue 5: Stripe Webhook Signature Verification Failed" title="Direct link to Issue 5: Stripe Webhook Signature Verification Failed" translate="no">​</a></h3>
+<p><strong>Error:</strong> <code>Webhook signature verification failed</code></p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li>Ensure the Stripe CLI is running and forwarding to the correct port</li>
+<li>Copy the latest webhook secret from the Stripe CLI output</li>
+<li>Update <code>STRIPE_WEBHOOK_SECRET</code> in <code>.env.local</code></li>
+<li>Restart the development server</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="issue-6-ble-connection-fails-in-browser">Issue 6: BLE Connection Fails in Browser<a href="#issue-6-ble-connection-fails-in-browser" class="hash-link" aria-label="Direct link to Issue 6: BLE Connection Fails in Browser" title="Direct link to Issue 6: BLE Connection Fails in Browser" translate="no">​</a></h3>
+<p><strong>Error:</strong> <code>Web Bluetooth API is not available</code></p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li>Ensure you are using Google Chrome (Web Bluetooth is not supported in all browsers)</li>
+<li>Enable the Web Bluetooth flag if prompted:</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">chrome://flags/#enable-web-bluetooth</span><br></span></code></pre></div></div>
+<ol start="3">
+<li>Serve your app over HTTPS (required for Web Bluetooth in production)</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="issue-7-typescript-compilation-errors">Issue 7: TypeScript Compilation Errors<a href="#issue-7-typescript-compilation-errors" class="hash-link" aria-label="Direct link to Issue 7: TypeScript Compilation Errors" title="Direct link to Issue 7: TypeScript Compilation Errors" translate="no">​</a></h3>
+<p><strong>Error:</strong> <code>Type &#x27;X&#x27; is not assignable to type &#x27;Y&#x27;</code></p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li>Ensure you have the correct TypeScript version:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">bun </span><span class="token function" style="color:rgb(80, 250, 123)">add</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(189, 147, 249);font-style:italic">-d</span><span class="token plain"> typescript@latest</span><br></span></code></pre></div></div>
+<ol start="2">
+<li>Clear the TypeScript cache:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token function" style="color:rgb(80, 250, 123)">rm</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(189, 147, 249);font-style:italic">-rf</span><span class="token plain"> .next</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">bun run dev</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="important-notes">Important Notes<a href="#important-notes" class="hash-link" aria-label="Direct link to Important Notes" title="Direct link to Important Notes" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="security">Security<a href="#security" class="hash-link" aria-label="Direct link to Security" title="Direct link to Security" translate="no">​</a></h3>
+<ul>
+<li>Never expose your Firebase Admin SDK credentials in client-side code</li>
+<li>Always use environment variables for API keys and secrets</li>
+<li>Enable Firebase Security Rules before deploying to production</li>
+<li>Use Stripe test keys during development; switch to live keys only in production</li>
+<li>Validate all user inputs on both client and server side</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="performance">Performance<a href="#performance" class="hash-link" aria-label="Direct link to Performance" title="Direct link to Performance" translate="no">​</a></h3>
+<ul>
+<li>Enable Firebase Firestore offline persistence for better mobile experience</li>
+<li>Compress images before uploading to Cloud Storage (especially for BLE transfer)</li>
+<li>Use lazy loading for heavy components like the chat system and image galleries</li>
+<li>Implement pagination for service listings and post request feeds</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="updates">Updates<a href="#updates" class="hash-link" aria-label="Direct link to Updates" title="Direct link to Updates" translate="no">​</a></h3>
+<ul>
+<li>Run <code>bun update</code> periodically to keep dependencies current</li>
+<li>Check Firebase Console for SDK version updates and deprecation notices</li>
+<li>Monitor Stripe API changelog for breaking changes</li>
+<li>Test BLE functionality with each JieLi SDK update</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="next-steps">Next Steps<a href="#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps" translate="no">​</a></h2>
+<p>Proceed to the <a href="/anime-artist-docs/docs/installation/deployment">Deployment Guide</a> to learn how to deploy the Anime Artist Platform to production.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/your-username/anime-artist-docs/tree/main/docs/installation/installation-steps.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/anime-artist-docs/docs/category/installation"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Installation</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/anime-artist-docs/docs/installation/file-structure"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">File Structure</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#prerequisites" class="table-of-contents__link toc-highlight">Prerequisites</a><ul><li><a href="#required-tools" class="table-of-contents__link toc-highlight">Required Tools</a></li><li><a href="#required-files" class="table-of-contents__link toc-highlight">Required Files</a></li></ul></li><li><a href="#installation-process" class="table-of-contents__link toc-highlight">Installation Process</a><ul><li><a href="#step-1-clone-the-repository" class="table-of-contents__link toc-highlight">Step 1: Clone the Repository</a></li><li><a href="#step-2-install-dependencies" class="table-of-contents__link toc-highlight">Step 2: Install Dependencies</a></li><li><a href="#step-3-configure-environment-variables" class="table-of-contents__link toc-highlight">Step 3: Configure Environment Variables</a></li><li><a href="#step-4-set-up-firebase-project" class="table-of-contents__link toc-highlight">Step 4: Set Up Firebase Project</a></li><li><a href="#step-5-initialize-firebase-in-the-project" class="table-of-contents__link toc-highlight">Step 5: Initialize Firebase in the Project</a></li><li><a href="#step-6-configure-stripe-webhooks-for-local-development" class="table-of-contents__link toc-highlight">Step 6: Configure Stripe Webhooks (for Local Development)</a></li><li><a href="#step-7-run-the-development-server" class="table-of-contents__link toc-highlight">Step 7: Run the Development Server</a></li></ul></li><li><a href="#verification" class="table-of-contents__link toc-highlight">Verification</a></li><li><a href="#common-installation-issues" class="table-of-contents__link toc-highlight">Common Installation Issues</a><ul><li><a href="#issue-1-nodejs-version-mismatch" class="table-of-contents__link toc-highlight">Issue 1: Node.js Version Mismatch</a></li><li><a href="#issue-2-bun-not-found" class="table-of-contents__link toc-highlight">Issue 2: Bun Not Found</a></li><li><a href="#issue-3-firebase-configuration-error" class="table-of-contents__link toc-highlight">Issue 3: Firebase Configuration Error</a></li><li><a href="#issue-4-port-already-in-use" class="table-of-contents__link toc-highlight">Issue 4: Port Already in Use</a></li><li><a href="#issue-5-stripe-webhook-signature-verification-failed" class="table-of-contents__link toc-highlight">Issue 5: Stripe Webhook Signature Verification Failed</a></li><li><a href="#issue-6-ble-connection-fails-in-browser" class="table-of-contents__link toc-highlight">Issue 6: BLE Connection Fails in Browser</a></li><li><a href="#issue-7-typescript-compilation-errors" class="table-of-contents__link toc-highlight">Issue 7: TypeScript Compilation Errors</a></li></ul></li><li><a href="#important-notes" class="table-of-contents__link toc-highlight">Important Notes</a><ul><li><a href="#security" class="table-of-contents__link toc-highlight">Security</a></li><li><a href="#performance" class="table-of-contents__link toc-highlight">Performance</a></li><li><a href="#updates" class="table-of-contents__link toc-highlight">Updates</a></li></ul></li><li><a href="#next-steps" class="table-of-contents__link toc-highlight">Next Steps</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Anemir — Anime Artist Platform.</div></div></div></footer></div>
+</body>
+</html>
