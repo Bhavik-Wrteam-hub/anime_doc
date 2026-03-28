@@ -11,11 +11,11 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://your-username.github.io',
-  baseUrl: '/anime-artist-docs/',
+  url: 'https://bhavik-wrteam-hub.github.io',
+  baseUrl: '/anime_doc/',
 
-  organizationName: 'your-username',
-  projectName: 'anime-artist-docs',
+  organizationName: 'Bhavik-Wrteam-hub',
+  projectName: 'anime_doc',
 
   onBrokenLinks: 'throw',
 
