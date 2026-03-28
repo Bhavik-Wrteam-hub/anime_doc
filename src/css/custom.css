@@ -1,0 +1,240 @@
+/**
+ * Anemir Theme — Anime Artist Platform
+ * Primary: #4a90e2 (brand blue)
+ * Accent: #FB5414 (orange-red)
+ * Selection: #0088ff
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Onest:wght@400;500;600;700&display=swap');
+
+:root {
+  --ifm-color-primary: #4a90e2;
+  --ifm-color-primary-dark: #3578cc;
+  --ifm-color-primary-darker: #306dbf;
+  --ifm-color-primary-darkest: #275a9e;
+  --ifm-color-primary-light: #6aa4e8;
+  --ifm-color-primary-lighter: #7bb0eb;
+  --ifm-color-primary-lightest: #a3c9f2;
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: 'Lexend', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family: 'Onest', system-ui, -apple-system, sans-serif;
+  --anemir-accent: #FB5414;
+  --anemir-accent-light: #F7EAE5;
+  --anemir-selection: #0088ff;
+  --anemir-dark: #1C1C1C;
+  --anemir-black: #030401;
+  --docusaurus-highlighted-code-line-bg: rgba(74, 144, 226, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #4a90e2;
+  --ifm-color-primary-dark: #3578cc;
+  --ifm-color-primary-darker: #306dbf;
+  --ifm-color-primary-darkest: #275a9e;
+  --ifm-color-primary-light: #6aa4e8;
+  --ifm-color-primary-lighter: #7bb0eb;
+  --ifm-color-primary-lightest: #a3c9f2;
+  --ifm-background-color: #0D1117;
+  --ifm-background-surface-color: #161B22;
+  --docusaurus-highlighted-code-line-bg: rgba(74, 144, 226, 0.15);
+}
+
+/* Global Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar styling & animation */
+.navbar {
+  animation: fadeInDown 0.6s ease-out;
+  backdrop-filter: blur(12px);
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.navbar:hover {
+  box-shadow: 0 4px 30px rgba(74, 144, 226, 0.1);
+}
+
+/* Navbar brand (logo + title) hover */
+.navbar__brand {
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 8px;
+  padding: 4px 8px;
+  position: relative;
+}
+
+.navbar__brand:hover {
+  transform: scale(1.04);
+  background: rgba(74, 144, 226, 0.08);
+}
+
+.navbar__brand:hover .navbar__logo img {
+  filter: drop-shadow(0 0 6px rgba(74, 144, 226, 0.5));
+}
+
+.navbar__brand:active {
+  transform: scale(0.98);
+}
+
+/* Navbar logo */
+.navbar__logo img {
+  transition: filter 0.35s ease, transform 0.35s ease;
+}
+
+/* Navbar link items hover */
+.navbar__item.navbar__link {
+  position: relative;
+  transition: color 0.3s ease, transform 0.25s ease;
+  border-radius: 8px;
+  padding: 6px 12px;
+}
+
+.navbar__item.navbar__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #4a90e2, #0088ff);
+  transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1), left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 2px;
+}
+
+.navbar__item.navbar__link:hover {
+  transform: translateY(-1px);
+  color: #4a90e2;
+}
+
+.navbar__item.navbar__link:hover::after {
+  width: 60%;
+  left: 20%;
+}
+
+/* Navbar right-side items (GitHub, theme toggle) */
+.navbar__items--right .navbar__item {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 8px;
+}
+
+.navbar__items--right .navbar__item:hover {
+  transform: translateY(-1px);
+  background: rgba(74, 144, 226, 0.08);
+}
+
+/* Theme toggle button hover */
+.navbar .clean-btn[class*="toggle"] {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s ease;
+  border-radius: 50%;
+}
+
+.navbar .clean-btn[class*="toggle"]:hover {
+  transform: rotate(20deg) scale(1.1);
+  background: rgba(74, 144, 226, 0.1);
+}
+
+/* Footer animation */
+.footer {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Link hover transitions */
+a {
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Button hover effects */
+.button--primary,
+.button--secondary {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button--primary:hover,
+.button--secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(74, 144, 226, 0.3);
+}

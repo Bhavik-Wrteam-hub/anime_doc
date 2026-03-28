@@ -1,0 +1,93 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.featureCard {
+  animation: cardFadeIn 0.6s ease-out both;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.featureCard:nth-child(1) { animation-delay: 0.1s; }
+.featureCard:nth-child(2) { animation-delay: 0.25s; }
+.featureCard:nth-child(3) { animation-delay: 0.4s; }
+
+.featureCard:hover {
+  transform: translateY(-8px);
+}
+
+[data-theme='dark'] .featureCard:hover {
+  box-shadow: 0 12px 40px rgba(74, 144, 226, 0.15);
+}
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.featureIcon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  animation: iconFloat 3s ease-in-out infinite;
+}
+
+.featureIcon:hover {
+  animation: iconPulse 0.6s ease-in-out;
+}
+
+@keyframes iconFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes iconPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.featureIconSocial {
+  background: linear-gradient(135deg, rgba(74, 144, 226, 0.15), rgba(0, 136, 255, 0.1));
+  border: 1px solid rgba(74, 144, 226, 0.2);
+}
+
+.featureIconMarket {
+  background: linear-gradient(135deg, rgba(251, 84, 20, 0.15), rgba(234, 179, 8, 0.1));
+  border: 1px solid rgba(251, 84, 20, 0.2);
+}
+
+.featureIconIoT {
+  background: linear-gradient(135deg, rgba(74, 144, 226, 0.1), rgba(251, 84, 20, 0.1));
+  border: 1px solid rgba(74, 144, 226, 0.15);
+}
+
+.featureTitle {
+  font-family: 'Onest', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.featureDesc {
+  font-family: 'Lexend', system-ui, sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  opacity: 0.8;
+  font-size: 0.95rem;
+}

@@ -1,0 +1,114 @@
+.banner {
+  background: linear-gradient(135deg, #0D1117 0%, #161B22 40%, #1a2332 70%, #0D1117 100%);
+  background-size: 200% 200%;
+  animation: bannerGradient 8s ease infinite, bannerFadeIn 0.8s ease-out;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  border: 1px solid rgba(74, 144, 226, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at 30% 50%,
+    rgba(74, 144, 226, 0.08) 0%,
+    transparent 50%
+  );
+  animation: bannerGlow 6s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+.banner::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at 70% 50%,
+    rgba(251, 84, 20, 0.06) 0%,
+    transparent 50%
+  );
+  animation: bannerGlow 8s ease-in-out infinite alternate-reverse;
+  pointer-events: none;
+}
+
+@keyframes bannerGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes bannerFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bannerGlow {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
+
+.bannerContent {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.bannerTitle {
+  color: #4a90e2;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-family: 'Onest', system-ui, sans-serif;
+  background: linear-gradient(135deg, #4a90e2 0%, #0088ff 50%, #FB5414 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmerText 4s linear infinite;
+}
+
+@keyframes shimmerText {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+.bannerSubtitle {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.1rem;
+  margin: 0;
+  font-family: 'Lexend', system-ui, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.bannerBadge {
+  display: inline-block;
+  background: rgba(74, 144, 226, 0.15);
+  color: #4a90e2;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(74, 144, 226, 0.3);
+  animation: fadeInUp 0.6s ease-out 0.3s both;
+}
