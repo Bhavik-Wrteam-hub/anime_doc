@@ -1,5 +1,5 @@
-import React, {useRef} from 'react';
-import type {ReactNode} from 'react';
+import React, { useRef } from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -11,7 +11,7 @@ import FloatingIcons from '@site/src/components/FloatingIcons/FloatingIcons';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   const heroRef = useRef<HTMLElement>(null);
 
   return (
@@ -20,7 +20,7 @@ function HomepageHeader() {
       <div className="container">
         <div className={styles.heroContent}>
           <div className={styles.heroLogo}>
-            <img src="img/logo.svg" alt="Anemir" width="80" height="80" />
+            <img src="img/logo.svg" alt="Hypemuse" width="80" height="80" />
           </div>
           <h1 className={styles.heroTitle}>
             {siteConfig.title}
@@ -29,7 +29,7 @@ function HomepageHeader() {
           <div className={styles.buttons}>
             <Link
               className="button button--primary button--lg"
-              to="/docs/intro">
+              to="/docs/features/overview">
               Get Started
             </Link>
           </div>
@@ -40,14 +40,14 @@ function HomepageHeader() {
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`${siteConfig.title} — Documentation`}
-      description="Anime Artist Platform — Social + Marketplace + Subscriptions + IoT">
+      description="Hypemuse — Social + Marketplace + IoT">
       <HomepageHeader />
       <main>
-        <div className="container" style={{marginTop: '2rem'}}>
+        <div className="container" style={{ marginTop: '2rem' }}>
           <DocBanner />
         </div>
         <HomepageFeatures />

@@ -1,5 +1,5 @@
 /**
- * Anemir Theme — Anime Artist Platform
+ * Hypemuse Theme
  * Primary: #4a90e2 (brand blue)
  * Accent: #FB5414 (orange-red)
  * Selection: #0088ff
@@ -237,4 +237,81 @@ a {
 .button--secondary:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(74, 144, 226, 0.3);
+}
+
+/* ─── Feature documentation: screenshot framing ───────────────────── */
+
+/* Generic frame for any embedded image inside docs */
+.markdown img {
+  border-radius: 14px;
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.35);
+  max-width: 100%;
+  height: auto;
+}
+
+/* Phone screenshots — constrained, centered, subtle device border */
+.markdown img[src*="/screens/phone/"] {
+  display: block;
+  margin: 1.4rem auto;
+  max-width: 300px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: #000;
+}
+
+/* Figma flow boards — wide, full-width design overviews */
+.markdown img[src*="/screens/figma/"] {
+  display: block;
+  margin: 1.4rem auto;
+  max-width: 100%;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: #2b2b2b;
+  padding: 6px;
+}
+
+/* Admin panel screenshots — wide dashboard captures, full content width */
+.markdown img[src*="/admin/"] {
+  display: block;
+  margin: 1.2rem auto;
+  max-width: 100%;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+/* Tablet screenshots — wider */
+.markdown img[src*="/screens/tablet/"] {
+  display: block;
+  margin: 1.4rem auto;
+  max-width: 640px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: #000;
+}
+
+/* Screenshot gallery built from a borderless markdown table */
+.screen-gallery table,
+.screen-gallery thead,
+.screen-gallery tr,
+.screen-gallery th,
+.screen-gallery td {
+  border: none !important;
+  background: transparent !important;
+}
+
+.screen-gallery table {
+  display: table;
+  width: 100%;
+}
+
+.screen-gallery td {
+  text-align: center;
+  vertical-align: top;
+  padding: 0.4rem;
+}
+
+.screen-gallery img {
+  margin: 0.4rem auto !important;
+  max-width: 230px !important;
+}
+
+/* Feature "chips" used in overview tables */
+.markdown table td .badge {
+  margin: 2px;
 }

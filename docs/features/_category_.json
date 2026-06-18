@@ -1,0 +1,10 @@
+{
+  "label": "Features & Modules",
+  "position": 2,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "Features & Modules",
+    "description": "A complete, module-by-module breakdown of every feature in the Hypemuse — user app, artist studio, IoT device companion, real-time messaging, and the admin-managed backend. Each page documents the screens, user flows, technical highlights, and role-based capabilities, with screenshots from the live build."
+  }
+}

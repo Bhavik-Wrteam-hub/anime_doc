@@ -5,8 +5,8 @@
       "type": "http"
     },
     "figma-local": {
-      "url": "http://127.0.0.1:3845/sse",
-      "type": "sse"
+      "url": "http://127.0.0.1:3845/mcp",
+      "type": "http"
     }
   }
 }

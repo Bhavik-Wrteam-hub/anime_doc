@@ -1,10 +1,10 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Anime Artist Platform',
-  tagline: 'A hybrid platform for anime artists and fans — Social + Marketplace + Subscriptions + IoT',
+  title: 'Hypemuse',
+  tagline: 'A hybrid platform for anime artists and fans — Social + Marketplace + IoT',
   favicon: 'img/favicon.svg',
 
   future: {
@@ -48,9 +48,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Anime Artist Platform',
+      title: 'Hypemuse',
       logo: {
-        alt: 'Anime Artist Platform Logo',
+        alt: 'Hypemuse Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -70,7 +70,7 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [],
-      copyright: `Copyright \u00A9 ${new Date().getFullYear()} Anemir \u2014 Anime Artist Platform.`,
+      copyright: `Copyright \u00A9 ${new Date().getFullYear()} Hypemuse \u2014 Hypemuse.`,
     },
     prism: {
       theme: prismThemes.github,

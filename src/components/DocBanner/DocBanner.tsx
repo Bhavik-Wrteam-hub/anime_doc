@@ -5,10 +5,10 @@ export default function DocBanner(): React.JSX.Element {
   return (
     <div className={styles.banner}>
       <div className={styles.bannerContent}>
-        <span className={styles.bannerBadge}>Anemir Platform</span>
-        <h2 className={styles.bannerTitle}>Anime Artist Platform</h2>
+        <span className={styles.bannerBadge}>Hypemuse</span>
+        <h2 className={styles.bannerTitle}>Hypemuse</h2>
         <p className={styles.bannerSubtitle}>
-          Social + Marketplace + Subscriptions + IoT Device Integration
+          Social + Marketplace + IoT Device Integration
         </p>
       </div>
     </div>
