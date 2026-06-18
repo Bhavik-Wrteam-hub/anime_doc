@@ -60,17 +60,13 @@ const config: Config = {
           position: 'left',
           label: 'Documentation',
         },
-        {
-          href: 'https://github.com/your-username/anime-artist-docs',
-          label: 'GitHub',
-          position: 'right',
-        },
+        // Search box is injected on the right by the local-search theme below.
       ],
     },
     footer: {
       style: 'dark',
       links: [],
-      copyright: `Copyright \u00A9 ${new Date().getFullYear()} Hypemuse \u2014 Hypemuse.`,
+      copyright: `Copyright \u00A9 ${new Date().getFullYear()} Hypemuse.`,
     },
     prism: {
       theme: prismThemes.github,
@@ -78,6 +74,22 @@ const config: Config = {
       additionalLanguages: ['bash', 'json', 'typescript', 'javascript'],
     },
   } satisfies Preset.ThemeConfig,
+
+  themes: [
+    [
+      // Offline, site-wide search \u2014 no external service required. Injects a
+      // search box into the navbar (right side) and builds the index at
+      // production build time.
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        indexBlog: false,
+        docsRouteBasePath: '/docs',
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      },
+    ],
+  ],
 };
 
 export default config;
